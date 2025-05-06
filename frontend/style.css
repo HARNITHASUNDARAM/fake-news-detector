@@ -1,0 +1,158 @@
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;  /* Stylish & readable */
+    background: linear-gradient(to right, #4A90E2, #A8D8EA);
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Center the logo and add spacing */
+.logo-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Outer box - Glassmorphism effect */
+.outer-box {
+    max-width: 750px;
+    background: rgba(255, 255, 255, 0.2); /* Glass effect */
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+    margin: auto;
+    backdrop-filter: blur(15px); /* Glass blur effect */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    animation: slideUp 0.8s ease-in-out;
+}
+
+/* Inner Box - Centered inside Outer Box */
+.container {
+    max-width: 90%;
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Headings */
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1A5276;
+}
+
+.slogan {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d8f44; /* Pastel Green */
+    margin-bottom: 15px;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    height: 140px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid #1A5276;
+    background: rgba(255, 255, 255, 0.8);
+    resize: none;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+textarea:focus {
+    border-color: #154360;
+    box-shadow: 0px 0px 10px rgba(26, 82, 118, 0.5);
+}
+
+/* Button */
+button {
+    background: linear-gradient(45deg, #1A5276, #4A90E2);
+    color: white;
+    padding: 14px 35px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #154360, #357ABD);
+    transform: scale(1.08);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Result styling */
+#result {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+    padding: 12px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .outer-box {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    textarea {
+        height: 120px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
